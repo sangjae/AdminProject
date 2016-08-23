@@ -35,7 +35,7 @@ public class AdminLogin extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
         CONTEXT = this;
 
         Button btn_login = (Button) findViewById(R.id.btn_login);
@@ -151,18 +151,15 @@ public class AdminLogin extends AppCompatActivity{
                 Log.e("!!!", "------");
                 //Toast.makeText(CONTEXT, getResources().getString(R.string.map_empty), Toast.LENGTH_SHORT).show();
 
-
                 return;
             }  else {
                 try {
                     //Toast.makeText(CONTEXT, result, Toast.LENGTH_SHORT).show();
                     Log.d("logtest2", result);
 
-
                     String str1 = result.toString();
                     Log.d("test1",str1);
                     String a = "success";
-
 
                     if(result.equals(a)){
 
@@ -181,11 +178,6 @@ public class AdminLogin extends AppCompatActivity{
                         Toast.makeText(CONTEXT, "아이디나 패스워드를 잘못쳤습니다.", Toast.LENGTH_SHORT).show();
 
                     }
-
-
-
-
-
                 } catch ( Exception e ) {
                     e.printStackTrace();
                 }

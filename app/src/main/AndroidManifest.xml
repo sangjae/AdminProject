@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.adminproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
-        <uses-permission android:name="android.permission.INTERNET" />
-
-        <activity android:name=".MainActivity">
+        <!-- 인트로 -->
+        <activity android:name=".Intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- 메인 -->
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <!-- 로그인 -->
+        <activity android:name=".login.AdminLogin">
+
+        </activity>
+
+        <!-- 리스트 보기 -->
+        <activity android:name=".notice.NoticeList">
+
+        </activity>
+        <!-- 리스트 추가하기 -->
+        <activity android:name=".notice.NoticeNew">
+
+        </activity>
+        <!-- 리스트 상세보기 -->
+        <activity android:name=".notice.NoticeView">
+
         </activity>
     </application>
 

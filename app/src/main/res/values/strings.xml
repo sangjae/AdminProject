@@ -20,6 +20,7 @@
     <string name="text_status">상태</string>
     <string name="text_account_ttl_name">목적</string>
     <string name="text_notice">공지사항</string>
+    <string name="text_notice_add">공지사항 추가</string>
     <string name="text_notice_title">공지사항 제목</string>
     <string name="text_notice_contents">공지사항 내용</string>
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,7 +37,7 @@ public class NoticeNew extends AppCompatActivity implements onNetworkResponseLis
 
     private void addToolBar() throws Exception {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolBar);
-        toolbar.setTitle(R.string.text_notice);
+        toolbar.setTitle(R.string.text_notice_add);
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -92,6 +93,6 @@ public class NoticeNew extends AppCompatActivity implements onNetworkResponseLis
 
     @Override
     public void onFailure(String api_key, String error_cd, String error_msg) {
-
+        Log.d("sangjaeTest", "failure");
     }
 }
